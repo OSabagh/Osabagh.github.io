@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22 23" style="enable-background:new 0 0 22 23;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#151515;}
+	.st1{opacity:0.75;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<title>OutagesMobile</title>
+<g id="Layer_2_2_">
+	<g id="Layer_1-2_1_">
+		<g id="Layer_1-2-2">
+			<path class="st0" d="M13,12.9l-2-2.1l-4.8,5.7L10,6.4l2.6,2.8l3-3.9l2.1,2.8L13,12.9z"/>
+		</g>
+		<polygon class="st0" points="8.8,6.4 6.2,3 4.3,4.5 7.9,9.2 		"/>
+		<polygon class="st0" points="14,13.2 13,14.2 11.2,12.4 10.8,13 15.6,19.3 17.6,17.8 		"/>
+	</g>
+</g>
+<g>
+	<g id="Layer_2_3_">
+		<g id="Layer_1-2_2_">
+			<g class="st1">
+				<circle class="st2" cx="11" cy="12" r="10"/>
+			</g>
+			<circle class="st3" cx="11" cy="11" r="10"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2_4_">
+	<g id="Layer_1-2_3_">
+		<g id="Layer_1-2-2_1_">
+			<path class="st4" d="M13,11.9l-2-2.1l-4.8,5.7L10,5.4l2.6,2.8l3-3.9l2.1,2.8L13,11.9z"/>
+		</g>
+		<polygon class="st4" points="8.8,5.4 6.2,2 4.3,3.5 7.9,8.2 		"/>
+		<polygon class="st4" points="14,12.2 13,13.2 11.2,11.4 10.8,12 16.1,19 18.1,17.5 		"/>
+	</g>
+</g>
+</svg>

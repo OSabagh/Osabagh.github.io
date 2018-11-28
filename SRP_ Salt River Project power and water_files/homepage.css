@@ -1,0 +1,521 @@
+﻿0 /******************************
+ ******************************
+    Homepage Styles only please 
+ ******************************
+ ******************************/
+#content {
+    background: none;
+}
+
+#my-carousel {
+    display: none;
+    background-color: red;
+    color: red;
+}
+
+    #my-carousel .item {
+        overflow: hidden;
+        background-color: #FF9600;
+    color: red;
+    }
+
+#bgvid {
+    object-fit: cover;
+}
+
+#myaccount {
+    /*changed to #e6e6e6 since this is the color shown on mobile*/
+    /*background: rgba(255, 255, 255, .8);*/
+    background: #e6e6e6;
+    border-radius: 5px;
+    /* remove following width restriction so that form will fill properly on phones */
+    /*width: 305px;*/
+    margin: 0 auto;
+    /* following padding and margins added for mobile layout only*/
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 5px 5px -5px 5px;
+}
+
+    #myaccount h3 {
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+
+    #myaccount label {
+        float: left;
+        width: 22%;
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #myaccount input {
+        width: 50%;
+    }
+
+#myAccountLinks a {
+    background: #6e8bb0;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px;
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#myAccountLinks span {
+    line-height: 0;
+}
+
+#myaccount #loginSubmit {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 75px;
+    font-size: 16px;
+}
+
+#loginForm > .row:last-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mid-links, .bot-links {
+    margin-top: 10px;
+}
+
+    .mid-links > div, .bot-links .col-sm-6 {
+        padding: 0 5px;
+        margin-bottom: 5px;
+    }
+
+    .mid-links a, .bot-links a {
+        color: #FFF;
+    }
+
+    .mid-links p {
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 25px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+        .mid-links p span {
+            font-size: 20px;
+            display: inline-block;
+            font-weight: 100;
+            display: none;
+        }
+
+.pay-bill, .moving, .outages, .residential, .business {
+    border-radius: 5px;
+}
+
+.pay-bill, .moving, .outages {
+    padding: 20px;
+}
+
+    .pay-bill:after, .moving:after, .outages:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+.pay-bill {
+    background: #fcc85f;
+}
+
+    .pay-bill:hover {
+        background: rgba(115, 123, 76, 0.8);
+        transition: background 300ms ease-in-out 0s;
+    }
+
+.moving {
+    background: #fcc85f;
+}
+
+    .moving:hover {
+        background: #e29938;
+        transition: background 300ms ease-in-out 0s;
+    }
+
+.outages {
+    background: #fcc85f;
+}
+
+    .outages:hover {
+        background: #e29938;
+        transition: background 300ms ease-in-out 0s;
+    }
+
+    .pay-bill div:first-child, .moving div:first-child, .outages div:first-child {
+        margin-right: 15px;
+        float: left;
+    }
+
+    .pay-bill div:last-child, .moving div:last-child, .outages div:last-child {
+        max-width: 58%;
+        float: left;
+    }
+
+.mid-links img {
+    width: 45px;
+    height: 45px;
+}
+
+/*  set the style for the inactive tab */
+.nav-tabs > li {
+    width: 50%;
+    padding: 0;
+}
+
+
+    /*these styles inactive tab body for mobile*/
+    .nav-tabs > li.business-tab > a,
+    .nav-tabs > li.business-tab > a:focus,
+    .nav-tabs > li.business-tab > a:hover {
+        background: #8B8F69;
+        color: #fff;
+        margin-left: 2px;
+        margin-right: 5px;
+        font-weight: bold;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    /*these styles will cause the active tab to have the same color as the tab body for mobile*/
+    .nav-tabs > li.residential-tab > a,
+    .nav-tabs > li.residential-tab > a:focus,
+    .nav-tabs > li.residential-tab > a:hover {
+        background: #b6c5dd;
+        color: #fff;
+        margin-left: 5px;
+        margin-right: 2px;
+        font-weight: bold;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+.tab-tab {
+    background: #6ba2b9;
+}
+
+.bot-links .col-sm-6 > div {
+    background: #6787b7;
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.business-tab .col-sm-6 .col-sm-12 {
+    background: #9c9e93;
+}
+
+.bot-links .tab-pane.residential-tab {
+    background: #6ba2b9;
+    padding: 10px;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -10px;
+}
+
+.bot-links .tab-pane.business-tab {
+    background: #9c9e93;
+    padding: 10px;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -10px;
+}
+
+.bot-links .col-sm-6:nth-child(2) .tab-pane {
+    background: #9c9e93;
+}
+
+.bot-links h3 {
+    text-transform: uppercase;
+    margin: 5px 5px 5px 20px;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+/*10/3/16 removed this because it is already being set to "block" in master.css*/
+/*#logoarea {
+    display: block;
+}*/
+
+/* this class was added in order to make an alignment adjustment on the mobile layout - used in default.aspx */
+.margin-top-negative-10-px {
+    margin-top: -10px;
+}
+
+/* this class was added in order to make an alignment adjustment on the mobile layout - used in default.aspx */
+.margin-bottom-negative-10-px {
+    margin-bottom: -10px;
+}
+
+#powerband {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    /* following styles added to prevent nav bar menu items from wrapping to two line on iPad format 1024x768 landscape*/
+    #bs-example-navbar-collapse-1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #myaccount {
+        position: absolute;
+        top: 0;
+        margin-top: 15px;
+        margin-left: 45px;
+        z-index: 99;
+    }
+
+        #myaccount h3 {
+            text-align: center;
+        }
+
+        #myaccount label {
+            font-size: 15px;
+            display: block;
+            float: none;
+            width: 100%;
+        }
+
+        #myaccount input {
+            float: left;
+            width: 100%;
+        }
+
+        #myaccount #loginSubmit {
+            position: static;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+    #myAccountLinks a {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    #my-carousel {
+        display: block;
+    }
+
+    .carousel-control {
+        background: none !important;
+        top: 50%;
+        left: 305px;
+        height: 35px;
+        width: 3%;
+        z-index: 99;
+    }
+
+        .carousel-control.right {
+            right: 15px;
+        }
+
+    .carousel-caption {
+        max-width: 650px;
+        background: none;
+        padding-left: 350px;
+        padding-bottom: 50px;
+        font-size: 41px;
+        text-align: left;
+        top: 50px;
+        left: 0;
+    }
+
+        .carousel-caption a {
+            display: block;
+        }
+
+        .carousel-caption p {
+            width: 100%;
+            line-height: 50px;
+        }
+
+        .carousel-caption > span:first-of-type {
+            font-size: 35px;
+        }
+
+        .carousel-caption span {
+            display: block;
+            font-size: 50px;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+
+    .carousel-link p {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .item {
+        height: 350px;
+        background-color: #6787B7;
+        background-blend-mode: multiply;
+    }
+
+        .item > img {
+            position: absolute;
+            bottom: -20px;
+        }
+
+    .mid-links > div:first-child, .bot-links :first-child .col-sm-6 {
+        padding-left: 0;
+    }
+
+    .mid-links > :last-child, .bot-links > :last-child > :last-child .col-sm-6 {
+        padding-right: 0;
+    }
+
+    .mid-links > div, .bot-links .col-sm-6 {
+        padding: 0 5px;
+        margin-bottom: 0;
+    }
+
+    .mid-links img {
+        width: 97px;
+        height: 97px;
+    }
+
+    .mid-links p span {
+        display: block;
+    }
+
+    .bot-links h3 img {
+        margin-right: 10px;
+    }
+
+    .bot-links .list-unstyled {
+        font-size: 18px;
+    }
+
+    .bot-links .col-sm-6 > div > .col-sm-4 {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        border: solid 1px #FFF;
+        border-radius: 5px;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 23px;
+        line-height: 25px;
+        color: #FFF;
+    }
+
+        .bot-links .col-sm-6 > div > .col-sm-4:hover {
+            background: rgba(255, 255, 255, 0);
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+
+        .bot-links .col-sm-6 > div > .col-sm-4 a {
+            display: block;
+            padding: 10px;
+        }
+
+            .bot-links .col-sm-6 > div > .col-sm-4 a:hover {
+                text-decoration: none;
+                border-bottom: none !important;
+            }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #bgvid {
+        -webkit-filter: grayscale(1) brightness(0.45) contrast(1.05);
+        filter: brightness(0.45) contrast(1.05);
+    }
+}
+
+@media (min-width: 992px) {
+    #myaccount {
+        width: 390px;
+        background: rgba(255, 255, 255, .8);
+    }
+
+        #myaccount input {
+            width: auto;
+        }
+
+        #myaccount label {
+            float: left;
+            width: 22%;
+            font-size: 13px;
+            margin-right: 5px;
+        }
+
+        #myaccount #loginSubmit {
+            position: absolute;
+            width: 75px;
+            margin-top: 0;
+            right: 23px;
+        }
+
+
+    #myAccountLinks a {
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .item {
+        background-blend-mode: normal;
+    }
+
+    .carousel-caption {
+        left: 16%;
+        text-shadow: 0px 4px 5px #000;
+    }
+
+    .carousel-control {
+        left: 445px;
+    }
+
+    .bot-links .list-unstyled {
+        margin-left: 45px;
+    }
+
+    .bot-links .col-sm-6:nth-child(2) .list-unstyled {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        display: block;
+        padding-left: 315px;
+    }
+
+    .bot-links .list-unstyled {
+        margin-left: 35px;
+    }
+
+    .bot-links .col-sm-6:nth-child(2) .list-unstyled {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bot-links a {
+        line-height: 36px;
+    }
+}

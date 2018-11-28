@@ -1,0 +1,101 @@
+function getCookie(name) {
+    // Original JavaScript code by Chirp Internet: www.chirp.com.au
+    var re = new RegExp(name + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+}
+
+var cookie = getCookie("myAccountType");
+
+//console.log(cookie);
+
+if (cookie) {
+    $(function () {
+        //turns the link into a toggle-able menu item again
+        $("ul.nav.navbar-nav > li:first-of-type > a").attr("data-toggle", "dropdown");
+        //$("#mp-menu > .mp-level > ul:first-of-type > li:first-of-type > a").attr("href", "javascript:void(0);");
+
+        //each if statement builds the menu for the account type
+        if (cookie == "water") {
+            $("ul.nav.navbar-nav > li:first-of-type > a").after('<ul class="dropdown-menu">' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+                                                                '<li><a href="https://water.srpnet.com/Account/Order">Order water</a></li>' +
+                                                                '<li><a href="https://water.srpnet.com/Account/Schedule">View schedule</a></li>' +
+                                                                '<li><a href="https://water.srpnet.com/Account/Assessment">View assessment</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/Payment/eChex/MyAccountPayment?mode=water">Make payment</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+                                                                '</ul>');
+            //**** Mobile ****//
+            //$("#mp-menu > .mp-level > ul:first-of-type > li:first-of-type > a").after('<div class="mp-level" data-level="2">' +
+            //                                                                          '<a class="mp-back" href="javascript:void(0);">< MY ACCOUNT</a>' +
+            //                                                                          '<ul>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+            //                                                                          '<li><a href="https://water.srpnet.com/Account/Order">Order water</a></li>' +
+            //                                                                          '<li><a href="https://water.srpnet.com/Account/Schedule">View schedule</a></li>' +
+            //                                                                          '<li><a href="https://water.srpnet.com/Account/Assessment">View assessment</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/Payment/eChex/MyAccountPayment?mode=water">Make payment</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+            //                                                                          '</ul></div>');
+        }
+
+        if (cookie == "power") {
+            $("ul.nav.navbar-nav > li:first-of-type > a").after('<ul class="dropdown-menu">' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/eChexPayment.aspx">Make payment</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/ViewBill">View bill</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/Usage">View usage</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteOutages">Outage center</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/OutageHistory">Outage history</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteAccountHistory">Account history</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+                                                                '</ul>');
+            //**** Mobile ****//
+            //$("#mp-menu > .mp-level > ul:first-of-type > li:first-of-type > a").after('<div class="mp-level" data-level="2">' +
+            //                                                                          '<a class="mp-back" href="javascript:void(0);">< MY ACCOUNT</a>' +
+            //                                                                          '<ul>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/eChexPayment.aspx">Make payment</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/ViewBill">View bill</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/Usage">View usage</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteOutages">Outage center</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/OutageHistory">Outage history</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteAccountHistory">Account history</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+            //                                                                          '</ul></div>');
+        }
+
+        if (cookie == "dual") {
+            $("ul.nav.navbar-nav > li:first-of-type > a").after('<ul class="dropdown-menu">' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/eChexPayment.aspx">Make payment</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/ViewBill">View bill</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/Usage">View usage</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteOutages">Outage center</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/MyAccount/OutageHistory">Outage history</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteAccountHistory">Account history</a></li>' +
+                                                                '<li><a href="https://water.srpnet.com/Account/Order">Order water</a></li>' +
+                                                                '<li><a href="https://water.srpnet.com/Account/Schedule">View schedule</a></li>' +
+                                                                '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+                                                                '</ul>');
+            //**** Mobile ****//
+            //$("#mp-menu > .mp-level > ul:first-of-type > li:first-of-type > a").after('<div class="mp-level" data-level="2">' +
+            //                                                                          '<a class="mp-back" href="javascript:void(0);">< MY ACCOUNT</a>' +
+            //                                                                          '<ul>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Dashboard">Dashboard</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/eChexPayment.aspx">Make payment</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/ViewBill">View bill</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/Usage">View usage</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteOutages">Outage center</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/MyAccount/OutageHistory">Outage history</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/Context/RouteAccountHistory">Account history</a></li>' +
+            //                                                                          '<li><a href="https://water.srpnet.com/Account/Order">Order water</a></li>' +
+            //                                                                          '<li><a href="https://water.srpnet.com/Account/Schedule">View schedule</a></li>' +
+            //                                                                          '<li><a href="https://myaccount.srpnet.com/sso/AccountUpdate">Preference center</a></li>' +
+            //                                                                          '</ul></div>');
+        }
+    });
+}
+
+//#mp-menu > .mp-level > ul:first-of-type > li:first-of-type > a
+
+//console.log('loaded');

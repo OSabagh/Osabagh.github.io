@@ -1,0 +1,861 @@
+﻿.dropdown-toggle{    
+color: #e69900;
+
+}
+
+
+
+.col-xs-2{
+    align-content: center;
+    text-align: center;
+}
+
+.custom {
+    
+    text-align: center;
+    font-size: 20px;
+    border-style:solid;  
+    border-color: antiquewhite;
+    
+}
+
+.col-sm-12{
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+body {
+    font-family: "futura-pt",helvetica,arial,sans-serif;
+    font-size: 18px;
+}
+
+.col-sm-8 a, /*.col-sm-4 a,*/ .menu_related_content a {
+    color: #087ED8;
+    border-bottom: 1px dotted #afc2d0;
+}
+
+    .col-sm-8 a:hover, /*.col-sm-4 a:hover,*/ .menu_related_content a:hover {
+        border-bottom: 2px solid #087ED8;
+        text-decoration: none;
+    }
+
+    .col-sm-8 a.btn, .menu_related_content a.btn {
+        border-bottom: none;
+        color: #FFF;
+    }
+
+.srp-button {
+    display: block;
+    background: #087ED8;
+    color: #FFF;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin: 15px auto;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    word-wrap: normal !important;
+}
+
+/*Remove URLs when printing pages*/
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+
+    .callUsAnyTimeLink, .end-links, footer {
+        display: none;
+    }
+}
+
+/* ============================================================== */
+/* This class is used to add extra space after li items on        */
+/* content pages as shown in the "Content-example.aspx" template  */
+/* ============================================================== */
+.srp-list li {
+    margin-bottom: 15px;
+}
+
+.srp-button:hover {
+    background: #337ab7;
+}
+
+.col-sm-8 h4, .col-sm-4 h4, .col-sm-3 h4, .menu_related_content h4 {
+    font-weight: 700;
+    margin: 20px 0 0;
+}
+
+small.fine-print {
+    font-style: italic;
+}
+
+.content-page span.glyphicon.glyphicon-new-window {
+    font-size: 14px;
+}
+
+a fa fa-external-link {
+    font-size: 12px !important;
+}
+
+
+div.col-sm-4 a div h3 span.glyphicon.glyphicon-new-window {
+    font-size: .8em;
+}
+
+/**** Allows YouTube videos to fill div at any width ****/
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/**** Header/Quick Nav ****/
+#header {
+    display: none;
+    color:red;
+    padding-bottom: 120px;
+    
+    }
+
+.quick-nav {
+    padding-top: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    float: right;
+    font-size: 14px;
+    z-index: 99;
+    color:red;
+     		
+}
+
+    .quick-nav a {
+        float: left;
+        margin-top: -7px;
+        color: #FFF;
+    }
+
+    .quick-nav > :last-child {
+        margin-left: 65px;
+    }
+
+    .quick-nav :last-child img, button.navbar-toggle img {
+        width: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*Override so that outages icon is a little bigger*/
+.nav-outages img {
+    width: 28px !important;
+    height: 28px;
+}
+
+.mobile-buttons {
+    font-size: 12px;
+}
+
+/**** TEST Header/Quick Nav ****/
+#header {
+    display: none;
+    padding: 1x;
+    	
+}
+
+.quick-nav2 {
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    float: right;
+    font-size: 14px;
+    z-index: 99;
+    height: 42px;
+    margin-bottom: 1px;
+    padding-bottom: 0;
+    padding-top: 5px;
+    width: 580px;
+}
+
+    .quick-nav2 a {
+        float: left;
+        color: #004a87;
+        margin-left: 13px;
+        margin-top: -5px;
+    }
+
+    .quick-nav2 > :last-child {
+        margin-left: 5px;
+        border-right: none;
+    }
+
+    .quick-nav2 :last-child img, button.navbar-toggle img {
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.mobile-buttons {
+    font-size: 12px;
+}
+
+.navbar-header .visible-xs .col-xs-2 > a .cls-1 {
+    fill: #FFF;
+}
+
+/**** Navigation ****/
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    background-color: #004983;
+    border: none;
+    margin-bottom: 0;
+}
+
+ul.nav.navbar-nav > li {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+    height: 100%;
+    padding: 15px 14px;
+}
+
+a.navbar-brand.visible-xs img {
+    margin-top: 15px;
+    margin-left: 6px;
+}
+
+button.navbar-toggle {
+    margin-right: 65px;
+    border: none;
+    margin-top: 5px;
+    color: #FFF;
+    z-index: 999;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+    button.navbar-toggle .icon-bar {
+        display: none;
+    }
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+.callout {
+    border-bottom: 2px solid #0065a4;
+    border-top: 2px solid #0065a4;
+    color: red;
+    font-size: 1.28571em;
+    font-weight: 300;
+    line-height: 1.74286em;
+    margin-bottom: 15px;
+    padding: 16px;
+    margin: 15px 0 15px 15px;
+    /*width: 40%;*/
+    float: right;
+}
+
+ul.dropdown-menu a span {
+    font-size: 12px;
+}
+
+
+/**** End Links ****/
+.end-links {
+    background: #e5ba85;
+    margin-top: 15px;
+    opacity: .9;
+}
+
+    .end-links h4 {
+        font-weight: 600;
+    }
+
+/**** Powerband ****/
+#powerband {
+    background: rgba(0,73,131,1);
+    background: -moz-linear-gradient(left, rgba(0,73,131,1) 0%, rgba(0,73,131,1) 51%, rgba(241,188,156,1) 51%, rgba(241,188,156,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,73,131,1)), color-stop(51%, rgba(0,73,131,1)), color-stop(51%, rgba(241,188,156,1)), color-stop(100%, rgba(241,188,156,1)));
+    background: -webkit-linear-gradient(left, rgba(0,73,131,1) 0%, rgba(0,73,131,1) 51%, rgba(241,188,156,1) 51%, rgba(241,188,156,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,73,131,1) 0%, rgba(0,73,131,1) 51%, rgba(241,188,156,1) 51%, rgba(241,188,156,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,73,131,1) 0%, rgba(0,73,131,1) 51%, rgba(241,188,156,1) 51%, rgba(241,188,156,1) 100%);
+    background: linear-gradient(to right, rgba(0,73,131,1) 0%, rgba(0,73,131,1) 51%, rgba(241,188,156,1) 51%, rgba(241,188,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004983', endColorstr='#f1bc9c', GradientType=1 );
+}
+
+    #powerband > div {
+        height: 40px;
+        max-width: 1170px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #powerband svg {
+        height: 100%;
+    }
+
+/**** Footer ****/
+footer {
+    background: #FFF;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+#logoarea {
+    /* 10/3/16 changed display from "none" to "block" so the logo's will display on the footer on all pages */
+    display: block;
+    float: right;
+}
+
+    #logoarea > * {
+        float: left;
+        /*margin: 0 10px;*/
+        margin: 0;
+    }
+
+.footer-top > div:first-of-type {
+    margin-bottom: 15px;
+}
+
+.footer-top .visible-xs > .col-xs-2 img {
+    max-width: 50px;
+    min-width: 30px;
+}
+
+.footer-top .visible-xs > .col-xs-2:last-of-type img {
+    max-width: 55px;
+    min-width: 35px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+/**** Internal page styles ****/
+.mobile-art {
+    height: 400px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.buttons-container a:hover {
+    text-decoration: none;
+}
+
+.buttons-container a > div {
+    background: rgba(104, 134, 197, .79);
+    border: solid 1px #FFF;
+    border-radius: 5px;
+    padding: 16px;
+    color: #FFF;
+    -webkit-transition: background 300ms ease-in-out;
+    -moz-transition: background 300ms ease-in-out;
+    -ms-transition: background 300ms ease-in-out;
+    -o-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+    .buttons-container a > div:hover {
+        background: rgba(117, 123, 78, 1.0);
+    }
+
+.buttons-container h3 {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.buttons-container p {
+    font-size: 18px;
+}
+
+.content-page {
+    position: relative;
+}
+
+.sidebar-menu h4 {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.sidebar-menu .list-group {
+    background: rgba(94, 126, 175, 1.0);
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar-menu .list-group-item {
+    background: rgba(94, 126, 175, 1.0);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0;
+}
+
+    .sidebar-menu .list-group-item:hover {
+        background: rgba(115, 123, 76, 1.0);
+        /*border-top: solid 1px #FFF;
+        border-bottom: solid 1px #FFF !important;*/
+    }
+
+    .sidebar-menu .list-group-item a {
+        color: #FFF;
+        border-bottom: none;
+        display: block;
+    }
+
+        .sidebar-menu .list-group-item a:hover {
+            border-bottom: none;
+            /* text-decoration: underline;*/
+        }
+
+li.list-group-item.active {
+    background: rgba(115, 123, 76, 1.0);
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.sidebar-menu.second {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content-page > .col-sm-3.second {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.callUsLinks a {
+    background: #ffa251;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    float: left;
+    width: 45%;
+    height: 70px;
+    margin-left: 11px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.callUsAnyTimeLink {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+    .callUsAnyTimeLink a {
+        background: #ffc34d;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 15px;
+        float: left;
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+        margin-top: 5px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+.sidetext {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px 22px;
+    -webkit-box-shadow: 0 1px 5px 1px rgba(161,161,171,.5);
+    box-shadow: 0 1px 5px 1px rgba(161,161,171,.5);
+}
+
+    .sidetext h3 {
+        color: #0065A4 !important;
+    }
+
+/* .btt = "back to top" link styles */
+.btt {
+    text-align: right;
+    display: block;
+}
+
+    .btt a:link, .btt a:visited {
+        font-size: 0.7142857142857143em;
+        font-weight: 700;
+        line-height: 1.54286em;
+        text-transform: uppercase;
+        padding: 5px;
+        color: #413f3f;
+        -webkit-transition: background 700ms ease;
+        -moz-transition: background 700ms ease;
+        -ms-transition: background 700ms ease;
+        -o-transition: background 700ms ease;
+        transition: background 700ms ease;
+        background: #ffffff;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+        .btt a:link:hover, .btt a:visited:hover, .btt a:link:focus, .btt a:visited:focus, .btt a:link:active, .btt a:visited:active {
+            background: #acc0c7 !important;
+            color: #ffffff !important;
+        }
+
+p.btt a:link {
+    border-bottom: none;
+    color: #686A70;
+}
+/* end of .btt styles */
+
+.form-box {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 100px;
+    border-radius: 8px;
+    border: 1px solid #004A87;
+}
+
+    .form-box .btn {
+        font-size: 16px;
+    }
+
+.required, .form-error, .requiredFieldIndicator, .fieldError {
+    color: #a94442 !important;
+    font-weight: 600;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+}
+
+    .carousel-caption p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-caption a {
+        color: #FFF;
+        text-decoration: underline;
+    }
+
+.right.carousel-control, .left.carousel-control, .right.carousel-control:hover, .left.carousel-control:hover {
+    color: #FFF;
+    border: none;
+    opacity: 1;
+    text-shadow: 1px 5px 5px rgba(0,0,0,.6);
+}
+
+@media (min-width: 768px) {
+    #header {
+        display: block;
+        height: .1px;
+        padding-top: .1px;
+    }
+
+    .header-image {
+        margin-top: .1px;
+        
+    }
+
+    .quick-nav {
+        top: -45px;
+    }
+
+        .quick-nav > a, .quick-nav2 > a {
+            float: left;
+            padding: 10px;
+            border-right: solid 1px #9c9e93;
+            color: #004A87;
+        }
+
+            .quick-nav > a:last-child {
+                border-right: none;
+            }
+
+        .quick-nav > :last-child {
+            margin-left: 0;
+        }
+
+        .quick-nav img {
+            width: 28px;
+            height: 28px;
+        }
+
+    .mobile-buttons {
+        font-size: 14px;    
+        color:orange;
+    }
+
+    .nav.navbar-nav {
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    .navbar-fixed-top {
+        position: relative;
+    }
+
+    ul.nav.navbar-nav > li {
+        /*Allows menu items to be centered*/
+        float: none;
+        display: inline-block;
+        width: 99px;
+        border-right: solid #FFF 1px;
+        text-align: left;
+        flex: 1;
+        font-size: 13px;
+    }
+
+    .end-links {
+        text-align: left;
+        font-size: 15px;
+        padding: 13px 0;
+    }
+
+        .end-links h4 {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+        }
+
+    #content {
+        background-position: top right;
+        background-repeat: no-repeat;
+        /*min-height: 700px;
+        background-size: 65%;*/
+    }
+
+    .content-page > :first-child > .col-sm-8 {
+        background-color: #fff;
+        padding: 0 20px 10px;
+        -webkit-box-shadow: 3px 0 7px 1px rgba(0,0,0,.3);
+        box-shadow: 3px 0 7px 1px rgba(0,0,0,.3);
+        min-height: 700px;
+    }
+
+    .menu-page > :first-child p {
+        margin-bottom: 65px;
+    }
+
+    .menu-page .row {
+        margin-bottom: 15px;
+    }
+
+    .buttons-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+        .buttons-container a > div {
+            height: 100%;
+        }
+
+    .sidebar {
+        margin-top: 400px;
+    }
+
+    .sidebar-menu {
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+
+    .content-page > .col-sm-3.second {
+        right: 55px;
+    }
+
+    li.list-group-item.active:hover {
+        background: rgba(115, 123, 76, 1.0);
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+    }
+
+    .sidebar-menu .list-group-item.active a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -26px;
+        width: 0;
+        height: 0;
+        border-color: transparent rgba(115, 123, 76, 1.0) transparent transparent;
+        border-style: solid;
+        border-width: 41px 26px 0 0;
+    }
+
+    .footer-top .col-sm-5 > div {
+        float: left;
+        margin-right: 6px;
+    }
+
+    .footer-top .col-sm-5 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu_related_content {
+        margin-top: 60px;
+        border-top: 1px solid #AFA9AA;
+    }
+
+        .menu_related_content h4 {
+            font-weight: 700;
+            margin: 20px 0 0;
+        }
+}
+
+
+/* These items below are generally used with pages converted from the old SaveWithSRP.com, but can be applied throughout the site */
+
+div#testimonial {
+    background-color: #e0f7af;
+    background-image: url(/assets/img/closequote.png);
+    background-position: 90% 95%;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+    div#testimonial p {
+        background: url(/assets/img/startquote.png) no-repeat scroll 0 0 transparent;
+    }
+
+.disclaimer {
+    padding: 15px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #e3fbaf;
+    margin: 25px 0 20px 34px;
+}
+
+
+.social-media-icons {
+    float: right;
+    margin: 0 0 20px 10px;
+    padding-left: 10px;
+    border-left: solid 1px #eee;
+}
+
+    .social-media-icons span {
+        float: left;
+        clear: both;
+        margin-bottom: 1px;
+    }
+
+    .social-media-icons strong {
+        float: left;
+        font-size: 12px;
+    }
+
+@media (min-width: 992px) {
+    /*.buttons-container a > div {
+        height: 180px;
+    }*/
+
+    .content-page > .col-sm-3.second {
+        right: 73px;
+    }
+
+    .nav.navbar-nav {
+        display: block;
+    }
+
+    ul.nav.navbar-nav > li {
+        border-right: none;
+        width: auto;
+        flex: none;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    ul.nav.navbar-nav > li {
+        font-size: 16px;
+    }
+
+    /*.buttons-container a > div {
+        height: 160px;
+    }*/
+
+    .content-page > .col-sm-3.second {
+        right: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 50px;
+    }
+
+    #content {
+        background: none !important;
+    }
+
+    h1 {
+        border-bottom: 1px solid #0375a5;
+        padding-left: 15px;
+        padding-bottom: 11px;
+        margin-left: -15px;
+    }
+
+    .lead {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    .buttons-container a > div {
+        margin-bottom: 7px;
+    }
+}
